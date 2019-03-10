@@ -1,0 +1,78 @@
+.round__info {
+  clear: both;
+}
+
+.round__info--fixture {
+  text-align: center;
+  .round__info--fixture__content {
+    display: block;
+    text-decoration: none;
+    position: relative;
+  }
+}
+
+.score {
+  background: $color-accent;
+  color: #fff;
+  letter-spacing: 4px;
+  text-align: center;
+  line-height: 3em;
+  width: 6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.8em;
+  margin-top: -1.5em;
+}
+
+.team {
+  padding-left: 7.5rem;
+  position: relative;
+  .team__name {
+    vertical-align: middle;
+  }
+  .team__badge {
+    position: absolute;
+    margin-top: 0;
+  }
+  .team__badge:first-of-type {
+    left: 4em;
+  }
+  .team__badge:not(:first-of-type) {
+    right: 4em;
+  }
+}
+
+.team:first-of-type {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 7em;
+}
+
+
+
+.round__player-list {
+  border-top: 1px solid #DCDCDC;
+  padding-top: 2em;
+  margin-top: 3em;
+  .round__player-list__row {
+    position: relative;
+    padding: 8px 0;
+    .player-list--content {
+      text-decoration: none;
+      .player-name {
+        text-align: left;
+        position: relative;
+        left: 0;
+      }
+      .player-score {
+        letter-spacing: 4px;
+        text-align: center;
+        position: absolute;
+        margin-left: -1em;
+        left: 50%;
+      }
+    }
+  }
+
+}

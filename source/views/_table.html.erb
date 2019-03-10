@@ -1,13 +1,22 @@
-<ul class="table__titles">
-  <ul class="table__titles__left">
-    <li class="table__titles--item">Rank</li>
-    <li class="table__titles--item">Tippare</li>
+<div class="table">
+  <ul class="">
+      <li>
+        <div class="table__titles">
+          <span class="table__titles--rank">Rank</span>
+          <span class="table__titles--player">Tippare</span>
+          <span></span>
+          <span class="table__titles--round">Omgång</span>
+          <span class="table__titles--total">Total</span>
+        </div>
+      </li>
   </ul>
-  <ul class="table__titles__right">
-    <li class="table__titles--item">Omgång</li>
-    <li class="table__titles--item">Total</li>
-  </ul>
-</ul>
-<div class="table__player__container">
-  <%= partial "models/player--name.html" %>
+  <div class="table__player__container">
+    <ul>
+      <% 1 %> <%= partial "models/player--name.html" %>
+      <% 2 %> <%= partial "models/player--name.html" %>
+      <% 3 %> <%= partial "models/player--name.html" %>
+      <% 4 %> <%= partial "models/player--name.html" %>
+    </ul>
+
+  </div>
 </div>

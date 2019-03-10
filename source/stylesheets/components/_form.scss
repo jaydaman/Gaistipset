@@ -1,0 +1,47 @@
+.form-container__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__next-match {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  position: relative;
+  p {
+    label {
+      text-align: center;
+    }
+  }
+}
+
+.form__next-match--name {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form__next-match--result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team--home {
+  text-align: right;
+  margin-right: 2em;
+}
+.team--away {
+  text-align: left;
+  margin-left: 2em;
+}
+
+.result-input {
+  display: flex;
+  justify-content: center;
+  input {
+    width: 50px;
+  }
+}

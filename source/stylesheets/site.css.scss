@@ -1,6 +1,19 @@
+@import "base/mixins";
+@import "base/variables";
+@import "base/base";
+@import "base/typography";
+@import "components/sections";
+@import "components/table";
+@import "components/round";
+@import "components/form";
+@import "components/teams";
+@import "components/player";
+
+
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
