@@ -1,0 +1,30 @@
+.table__titles {
+  display: grid;
+  grid-template-columns: 50px 60px auto 80px 80px;
+  grid-column-gap: 12px;
+
+  .table__titles--round {
+    text-align: center;
+  }
+  .table__titles--total {
+    text-align: center;
+  }
+}
+
+.table__player__container {
+  margin-top: 2em;
+}
+
+.table__player {
+  display: grid;
+  grid-template-columns: 50px 60px auto 80px 80px;
+  grid-column-gap: 12px;
+  padding: 2em 0 1.5em;
+  border-bottom: 1px solid #DCDCDC;
+  .table__player--round-points {
+    text-align: center;
+  }
+  .table__player--total--points {
+    text-align: center;
+  }
+}
