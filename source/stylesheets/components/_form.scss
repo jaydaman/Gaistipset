@@ -1,47 +1,147 @@
-.form-container__info {
-  display: flex;
-  justify-content: space-between;
+.form__next-match {
+  padding: 40px 10px;
 }
 
-.form__next-match {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5em;
-  position: relative;
-  p {
+.nm-fixture {
+  clear: both;
+  padding: 20px 10px;
+
+  li {
+    display: list-item;
+
     label {
+      display: block;
       text-align: center;
     }
   }
 }
 
+.form-container__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
 .form__next-match--name {
   display: flex;
   flex-direction: column;
-  position: relative;
+  align-items: center;
+
+  label {
+    align-self: center;
+    line-height: 3em;
+  }
+
+  input {
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+  }
 }
 
 .form__next-match--result {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.team--home {
-  text-align: right;
-  margin-right: 2em;
-}
-.team--away {
-  text-align: left;
-  margin-left: 2em;
+  display: block;
+  position: relative;
+
+  span, .nm-team-name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .nm-overview {
+    display: block;
+    padding: 0.5em 2em 0.5em 2em;
+    min-height: 4em;
+  }
+
+  .nm-teams {
+    display: block;
+    width: auto;
+    position: relative;
+  }
+
+  .nm-team {
+    width: 49.5%;
+    position: relative;
+    padding-left: 7em;
+    padding-right: 0;
+
+    &:first-of-type {
+      text-align: right;
+      padding-left: 0;
+      padding-right: 7em;
+
+      .badge {
+        right: 4.5em;
+      }
+    }
+
+    &:not(:first-of-type) {
+      .badge {
+        left: 4.5em;
+      }
+    }
+
+    .nm-team-name {
+      font-family: sans-serif;
+      font-size: 0.85em;
+      line-height: 3em;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+
+
+      &:first-of-type {
+
+      }
+    }
+
+    .badge {
+      position: absolute;
+      top: 50%;
+      border: 1px solid #121212;
+      width: 25px;
+      height: 25px;
+      margin-top: -12px;
+    }
+  }
+
+  .nm-inputs {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: -20px;
+    z-index: 10;
+
+    input {
+      width: 50px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
 }
 
-.result-input {
+.nm-submit {
+  padding: 20px 0;
   display: flex;
   justify-content: center;
-  input {
-    width: 50px;
+  text-align: center;
+}
+
+.nm-submit__button {
+  width: 15%;
+  background-color: $color-accent;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-primary;
   }
 }
