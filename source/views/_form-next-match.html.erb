@@ -1,24 +1,44 @@
 <div class="form-container">
   <ul class="form-container__info">
-    <li>Omgång</li>
-    <li>Hemmalag–Bortalag</li>
-    <li>Datum</li>
+    <li>Omgång 1</li>
+    <li>Trelleborgs FF — GAIS</li>
+    <li>2019-03-30 kl 16.00</li>
   </ul>
   <form name="Omgång 1" class="form__next-match" method="post" data-netlify="true">
     <p class="form__next-match--name">
       <label> Ditt namn* </label>
       <input type="text" name="name" />
     </p>
-    <p class="form__next-match--result">
-      <label> Tippa resultat*</label>
-      <div class="result-input">
-        <h4 class="team--home">Trelleborgs FF</h4>
-        <input type="text" name="hemmalag" />
-        <span>–</span>
-        <input type="text" name="bortalag" />
-        <h4 class="team--away">Bortalag</h4>
-      </div>
 
-    </p>
+    <ul class="nm-fixture">
+      <li>
+        <label> Tippa resultat*</label>
+      </li>
+      <li>
+        <div class="form__next-match--result">
+          <span class="nm-overview">
+            <span class="nm-teams">
+              <span class="nm-team">
+                <span class="nm-team-name">Trelleborgs FF</span>
+                <span class="badge TFF"></span>
+              </span>
+              <span class="nm-inputs">
+                <input type="text" name="hemmalag" />
+                <span>–</span>
+                <input type="text" name="bortalag" />
+              </span>
+              <span class="nm-team">
+                <span class="nm-team-name">GAIS</span>
+                <span class="badge GAIS"></span>
+              </span>
+            </span>
+          </span>
+        </div>
+      </li>
+      <li class="nm-submit">
+        <input class="nm-submit__button" type="submit" value="Tippa!">
+      </li>
+    </ul>
+
   </form>
 </div>
